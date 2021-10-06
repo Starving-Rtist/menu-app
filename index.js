@@ -30,6 +30,28 @@ function renderFood(dish){
         document.getElementById("description").textContent = dish.description;
         document.getElementById("price").textContent = "$" + dish.price;
     })
+
 }
+
+const addDish = document.getElementById("button")
+
+addDish.addEventListener("click", () => {
+        
+    const dishName = document.getElementById("name").textContent;
+        
+    const dishPrice = document.getElementById("price");
+    console.log(dishPrice);  //need to get rid of the $ sign
+
+    const newOrder = document.getElementById("order");
+
+    const newDish = document.createElement('h3');
+
+    newDish.textContent = dishName;
+
+    newOrder.appendChild(newDish);
+    
+
+    });
+
 
 
