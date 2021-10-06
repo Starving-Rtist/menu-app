@@ -4,61 +4,71 @@
             "id": 1,
             "name": "Aztec Soup",
             "description": "Strips of fried tortillas topped with chicken broth, tomato, pepper, garlic, coriander, cheese, avocado, onion and sour cream.",
-            "image": "./assets/AztecSoup.jpg"
+            "image": "./assets/AztecSoup.jpg",
+            "price": 5
         },
         {
             "id": 2,
             "name": "Burritos",
             "description": "Cylindrically rolled flour tortilla stuffed with different ingredients of choice.",
-            "image": "./assets/Burritos.jpg"
+            "image": "./assets/Burritos.jpg",
+            "price": 10
         },
         {
             "id": 3,
             "name": "Ceviche",
             "description": "Raw fish, onion, tomato, chilies, coriander, and lemon.",
-            "image": "./assets/Ceviche.jpg"
+            "image": "./assets/Ceviche.jpg",
+            "price": 10
         },
         {
             "id": 4,
             "name": "Chilaquiles",
             "description": "Fried corn tortilla soaked in red sauce, topped with shredded chicken, chorizo, beef and a sunny side up egg.",
-            "image": "./assets/Chilaquiles.jpg"
+            "image": "./assets/Chilaquiles.jpg",
+            "price": 8
         },
         {
             "id": 5,
             "name": "Enchiladas",
             "description": "Corn tortilla dipped in hot sauce, filled with chicken stew and vegetables.",
-            "image": "./assets/Enchiladas.jpg"
+            "image": "./assets/Enchiladas.jpg",
+            "price": 12
         },
         {
             "id": 6,
             "name": "Flautas",
             "description": "Rolled corn tortilla fried and filled with mashed potato, cheese, chicken and sour cream on top.",
-            "image": "./assets/Flautas.jpg"
+            "image": "./assets/Flautas.jpg",
+            "price": 8
         },
         {
             "id": 7,
             "name": "Quesadilla",
             "description": "Grilled corn tortilla folded in half, stuffed with cheese and pico de gallo.",
-            "image": "./assets/Quesadilla.jpg"
+            "image": "./assets/Quesadilla.jpg",
+            "price": 9
         },
         {
             "id": 8,
             "name": "Tacos",
             "description": "Get out if you don't know tacos already...",
-            "image": "./assets/Tacos.jpg"
+            "image": "./assets/Tacos.jpg",
+            "price": 10
         },
         {
             "id": 9,
             "name": "Tamales",
             "description": "Shredded chicken with green salsa wrapped in corn leaves.",
-            "image": "./assets/Tamales.jpg"
+            "image": "./assets/Tamales.jpg",
+            "price": 3
         },
         {
             "id": 10,
             "name": "Horchata",
             "description": "The most delicious drink in the world.",
-            "image": "./assets/Horchata.jpg"
+            "image": "./assets/Horchata.jpg",
+            "price": 6
         }
     ]
 }
