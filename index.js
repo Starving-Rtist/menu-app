@@ -4,7 +4,7 @@ fetch(BASE_URL)
     .then(resp => resp.json())
     .then(dish => {
         dish.forEach(renderFood);
-        console.log(dish);
+        // console.log(dish); //to test the fetch results
     });
     
 
@@ -28,19 +28,24 @@ function renderFood(dish){
         document.getElementById("detail-image").src = dish.image;
         document.getElementById("name").textContent = dish.name;
         document.getElementById("description").textContent = dish.description;
-        document.getElementById("price").textContent = "$" + dish.price;
+        document.getElementById("price").textContent = dish.price;
+        selectedDish = dish;
     })
+
 
 }
 
 const addDish = document.getElementById("button")
 
+let totalPrice = 0;
+
 addDish.addEventListener("click", () => {
         
     const dishName = document.getElementById("name").textContent;
         
-    const dishPrice = document.getElementById("price");
-    console.log(dishPrice);  //need to get rid of the $ sign
+    // const dishPrice = document.getElementById("price").innerText;
+    const dishPrice = selectedDish.price;
+    // console.log(dishPrice);
 
     const newOrder = document.getElementById("order");
 
@@ -49,7 +54,19 @@ addDish.addEventListener("click", () => {
     newDish.textContent = dishName;
 
     newOrder.appendChild(newDish);
+
+    totalPrice = totalPrice + dishPrice;
+
+    // console.log(totalPrice);
+
+    const finalPrice = document.getElementById("total");
     
+    const priceLocation = document.createElement("h2");
+
+    priceLocation.textContent = `Total Price: $${totalPrice}`;
+    // priceLocation.textContent = "Total Price: Who cares? Just eat as much as you can!"
+
+    finalPrice.replaceChildren(priceLocation);
 
     });
 
