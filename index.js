@@ -32,6 +32,9 @@ function renderFood(dish){
         selectedDish = dish;
     })
 
+    //hovering effects for menu images
+    images.addEventListener('mouseenter', () => images.src = "./assets/eatme.jpg");
+    images.addEventListener('mouseleave', () => images.src = dish.image);
 
 }
 
@@ -43,7 +46,6 @@ addDish.addEventListener("click", () => {
         
     const dishName = document.getElementById("name").textContent;
         
-    // const dishPrice = document.getElementById("price").innerText;
     const dishPrice = selectedDish.price;
     // console.log(dishPrice);
 
